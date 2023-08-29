@@ -1,0 +1,56 @@
+//-------- Step 1 -------
+mkdir WebpackFundmentals
+cd WebpackFundmentals
+npm init -y
+
+//-------- Step 2 -------
+npm install webpack webpack-cli --save-dev
+
+//-------- Step 3 -------
+add these lines in scripts object in package.json file
+
+"dev": "webpack --mode development",
+"build": "webpack --mode production"
+
+//-------- Step 4 -------
+In the same location as my package.json file, add the following:
+
+A folder called src
+An index.html file inside src
+An index.js file inside src
+A dist folder
+
+//-------- Step 5 -------
+Run this command to bundle js in index file & generate file in dist folder
+
+npm run dev
+
+//-------- Step 6 -------
+Install & Use html-webpack-plugin :
+
+html-webpack-plugin :
+-------------------------
+    This is a webpack plugin that simplifies creation of HTML files to serve your webpack bundles. 
+    This is especially useful for webpack bundles that include a hash in the filename which changes 
+    every compilation. You can either let the plugin generate an HTML file for you, supply your own 
+    template using lodash templates or use your own loader. 
+
+Installation :
+--------------------
+npm i --save-dev html-webpack-plugin --save-dev
+
+Documentation URL : https://github.com/jantimon/html-webpack-plugin#options
+
+//-------- Step 7 -------
+create webpack.config.js file at root folder
+
+//-------- Step 8 -------
+create webpack.config.js file at root folder
+
+define html-webpack-plugin in config file & add entry & output attributes
+
+//-------- Step 9 -------
+npm install css-loader style-loader --save-dev
+
+Note: file-loader, raw-loader, and url-loader all these loader for assets management
+
